@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="build/main.bundle.js"></script>
+    <title>HW03 - Beer searching</title>
+	<style type="text/css">
+	body {
+			background-image: url("img/back.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-attachment: fixed;			
+		}
+	</style>
+</head>
+<body>
+<div class="search_box">
+    <div class="search_icon" align="center"><i class="fa fa-search"> Search box</i></div>
+    <div class="search_type">
+        <table class="search_area">
+            <tr>
+                <th class="search_header">Name : </th>
+                <td><input type="text" id="beer_name" class="search_input"></td>
+            </tr>
+            <tr>
+                <th class="search_header">Yeast : </th>
+                <td><input type="text" id="yeast" class="search_input"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="button_search" align="center ">
+        <button id="btn_search" class="btn_search" name="btnSearch" >Find my beer</button>
+    </div>
+</div>
+<div id="table_result"></div>
+</body>
+</html>
